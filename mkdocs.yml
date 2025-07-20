@@ -1,0 +1,78 @@
+site_name: LLM SRT Translation
+site_description: A powerful tool for translating SRT subtitle files using Amazon Bedrock's LLM models
+site_author: mrzacarias
+site_url: https://mrzacarias.github.io/llm_srt_translation/
+
+repo_name: mrzacarias/llm_srt_translation
+repo_url: https://github.com/mrzacarias/llm_srt_translation
+edit_uri: edit/main/docs/
+
+theme:
+  name: material
+  language: en
+  palette:
+    - scheme: default
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/toggle-switch
+        name: Switch to dark mode
+    - scheme: slate
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/toggle-switch-off-outline
+        name: Switch to light mode
+
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.expand
+    - navigation.top
+    - search.suggest
+    - search.highlight
+    - content.code.copy
+
+  font:
+    text: Roboto
+    code: Roboto Mono
+
+markdown_extensions:
+  - admonition
+  - codehilite
+  - pymdownx.details
+  - pymdownx.emoji:
+      emoji_generator: material.extensions.emoji.to_svg
+  - pymdownx.superfences
+  - pymdownx.tabbed
+  - pymdownx.tasklist
+  - toc:
+      permalink: true
+
+plugins:
+  - search
+  - minify:
+      minify_html: true
+
+nav:
+  - Home: index.md
+  - Installation: installation.md
+  - Quick Start: quickstart.md
+  - Usage Guide: usage.md
+  - API Reference: api.md
+  - Examples: examples.md
+  - Troubleshooting: troubleshooting.md
+  - Contributing: contributing.md
+
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/mrzacarias/llm_srt_translation
+    - icon: fontawesome/brands/python
+      link: https://pypi.org/project/llm-srt-translation/
+
+extra_css:
+  - stylesheets/extra.css
+
+extra_javascript:
+  - javascripts/extra.js 

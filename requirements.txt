@@ -1,0 +1,4 @@
+boto3>=1.34.0
+langdetect>=1.0.9
+polyglot>=16.7.4
+pycld2>=0.41 
